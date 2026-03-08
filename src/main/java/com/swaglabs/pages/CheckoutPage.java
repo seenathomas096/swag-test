@@ -20,11 +20,21 @@ public class CheckoutPage extends BasePage {
     }
 
     public boolean isOnStep1() {
-        return driver.getCurrentUrl().contains("checkout-step-one.html");
+        try {
+            wait.until(org.openqa.selenium.support.ui.ExpectedConditions.urlContains("checkout-step-one.html"));
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
     }
 
     public boolean isOnStep2() {
-        return driver.getCurrentUrl().contains("checkout-step-two.html");
+        try {
+            wait.until(org.openqa.selenium.support.ui.ExpectedConditions.urlContains("checkout-step-two.html"));
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
     }
 
     public boolean isOnCompletePage() {
