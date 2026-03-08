@@ -22,30 +22,32 @@ This project contains 10 automated test cases covering the core functionalities 
 ## Project Structure
 
 ```
-SWAGLAB-automation/
+swag-test/
 ├── src/
 │   ├── main/java/com/swaglabs/
 │   │   ├── pages/              # Page Object classes
 │   │   │   ├── BasePage.java
-│   │   │   ├── LoginPage.java
-│   │   │   ├── ProductsPage.java
 │   │   │   ├── CartPage.java
-│   │   │   └── CheckoutPage.java
+│   │   │   ├── CheckoutPage.java
+│   │   │   ├── LoginPage.java
+│   │   │   └── ProductsPage.java
 │   │   └── utils/              # Utility classes
 │   │       ├── DriverManager.java
 │   │       └── TestUtils.java
 │   └── test/
 │       ├── java/com/swaglabs/tests/
 │       │   ├── BaseTest.java
-│       │   ├── LoginTest.java     # 3 test cases
-│       │   ├── ProductTest.java   # 2 test cases
 │       │   ├── CartTest.java      # 3 test cases
-│       │   └── CheckoutTest.java  # 2 test cases
+│       │   ├── CheckoutTest.java  # 2 test cases
+│       │   ├── LoginTest.java     # 3 test cases
+│       │   └── ProductTest.java   # 2 test cases
 │       └── resources/
 │           └── testng.xml
 ├── reports/
 │   └── screenshots/
-└── pom.xml
+├── .gitignore
+├── pom.xml
+└── README.md
 ```
 
 ## Test Cases Summary
@@ -74,7 +76,7 @@ SWAGLAB-automation/
 1. Clone or download the project
 2. Navigate to project directory:
    ```bash
-   cd SWAGLAB-automation
+   cd swag-test
    ```
 
 ## Running Tests
