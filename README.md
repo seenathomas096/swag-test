@@ -130,4 +130,5 @@ Screenshots are automatically captured for failed tests and saved in:
 ## Author
 
 Created on: March 9, 2026
+
 Created By: Seena Thomas
