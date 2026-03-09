@@ -33,8 +33,9 @@ public class BasePage {
 
     protected void sendKeys(By locator, String text) {
         WebElement element = waitForElement(locator);
-        element.click(); // focus first so React registers onFocus/onChange
-        element.clear();
+        element.click();
+        element.sendKeys(org.openqa.selenium.Keys.chord(org.openqa.selenium.Keys.CONTROL, "a"));
+        element.sendKeys(org.openqa.selenium.Keys.DELETE);
         element.sendKeys(text);
         try {
             Thread.sleep(500); // Wait 0.5 seconds after typing
